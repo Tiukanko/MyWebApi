@@ -1,0 +1,26 @@
+version: '3.4'
+
+services:
+  userservice:
+    image: userservice
+    build:
+      context: .
+      dockerfile: UserService/Dockerfile
+    ports:
+      - "32770:8080"
+  
+  orderservice:
+    image: orderservice
+    build:
+      context: .
+      dockerfile: OrderService/Dockerfile
+    ports:
+      - "32772:8080"
+
+  catalogservice:
+    image: catalogservice
+    build:
+      context: .
+      dockerfile: CatalogService/Dockerfile
+    ports:
+      - "32776:8080"

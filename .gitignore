@@ -1,0 +1,15 @@
+# Файли та папки Visual Studio
+.vs/
+*.vsidx
+*.vscode/
+*.user
+*.suo
+*.db
+*.cache
+*.pidb
+*.obj
+*.log
+
+# Файли збірки
+bin/
+obj/
